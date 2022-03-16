@@ -15,7 +15,6 @@
             "email": "ertan.usta@ideasoft.com.tr"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": ">=7.4",
         "symfony/framework-bundle": "^6.0",
