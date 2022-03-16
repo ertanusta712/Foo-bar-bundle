@@ -1,0 +1,20 @@
+_foo_index:
+  controller: FooBar\Controller\FooController::index
+  path: /foo
+  methods: GET|HEAD
+
+_bar_index:
+  controller: FooBar\Controller\BarController::index
+  path: /bar
+
+_subscriber_index:
+  controller: FooBar\Controller\SubscriberController::index
+  path: /subscriber
+
+_bar_store:
+  controller: FooBar\Controller\BarController::store
+  path: /bar-store
+
+_foo_store:
+  controller: FooBar\Controller\FooController::store
+  path: /foo-store

@@ -1,0 +1,3 @@
+_foobundle_controller:
+  resource: "@FooBarBundle/Resources/config/routing.yaml"
+  prefix: /bundle

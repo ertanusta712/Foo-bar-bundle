@@ -1,0 +1,31 @@
+services:
+
+  FooBar\Controller\:
+    resource: '../../Controller/'
+    tags: ['controller.service_arguments']
+    public: true
+    autowire: true
+    autoconfigure: true
+
+  FooBar\EventListener\FooListener:
+    tags:
+      -
+        name: 'doctrine.orm.entity_listener'
+        event: 'postPersist'
+        entity: 'FooBar\Entity\FooEntity'
+
+  FooBar\EventListener\BarListener:
+    tags:
+      -
+        name: 'doctrine.orm.entity_listener'
+        event: 'postPersist'
+        entity: 'FooBar\Entity\BarEntity'
+
+  FooBar\Service\:
+    resource: '../../Service'
+    public: true
+    autowire: true
+    autoconfigure: true
+
+  FooBar\Service\ServiceInterface $fooService: "@FooBar\\Service\\FooService"
+  FooBar\Service\ServiceInterface: "@FooBar\\Service\\BarService"
