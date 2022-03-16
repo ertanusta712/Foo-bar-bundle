@@ -22,6 +22,6 @@ class FooBarCompilerPass implements CompilerPassInterface
             ->addTag('kernel.event_subscriber');
 
         $fooDispatcherServiceDefinition = $container->getDefinition('debug.event_dispatcher');
-        $fooDispatcherServiceDefinition->setClass(FooDispatcherService::class);
+        //$fooDispatcherServiceDefinition->setClass(FooDispatcherService::class);
     }
 }
