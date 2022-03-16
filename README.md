@@ -1,0 +1,2 @@
+# Foo-bar-bundle
+test
